@@ -33,14 +33,14 @@ export const Pricing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="custom-block-subtitle">
-                Find Your Perfect Fit
+                Revisa nuestra oferta de mantencion.
               </span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
-                Choose your best plan
+                Elige nuestros planes bases.
               </h2>
               <p className="mb-6 text-customGrayText">
-                Select the plan that suits your needs and benefit from our
-                analytics tools.
+                Ademas de crear tu aplicacion ofrecemos servicios de
+                mantenimiento y SEO.
               </p>
               <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -56,9 +56,9 @@ export const Pricing = () => {
                       isMonthly ? "mr-9 ml-3" : "mr-9 ml-3 text-gray-400"
                     }
                   >
-                    Monthly
+                    Mensual
                   </div>
-                  <div className={isMonthly && "text-gray-400"}>Yearly</div>
+                  <div className={isMonthly && "text-gray-400"}>Anual</div>
                 </div>
               </label>
             </div>
@@ -66,11 +66,11 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-customDarkBg3 rounded-3xl">
                   <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
-                    Beginner
+                    Starter
                   </h4>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      $0
+                      $30.000
                     </div>
                     <div className="text-gray-500">
                       {isMonthly ? "/ month" : "/ year"}
@@ -78,7 +78,7 @@ export const Pricing = () => {
                   </div>
 
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    The perfect way to get started and get used to our tools.
+                    Manteniemiento economico a tu alcance.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
                     {pricingData.map((text, index) => (
@@ -142,7 +142,7 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    Experience the full power of our  analytic platform
+                    Experience the full power of our analytic platform
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
                     {pricingData.map((text, index) => (
