@@ -19,7 +19,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-            Descubre junto a nosotros
+            Explora un Nuevo Mundo de Oportunidades con Nosotros
           </div>
         </motion.div>
         <motion.div
@@ -29,7 +29,7 @@ export const Hero = () => {
         >
           <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4">
             <span className="md:inline">
-              Las Herramientas que necesitas para hacer crecer tu negocio
+              Impulsa tu Negocio con las Herramientas Más Innovadoras{" "}
             </span>
           </div>
         </motion.div>
@@ -39,7 +39,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-            Integracions personalizada para el proyecto que imaginas.
+            Soluciones Personalizadas para Convertir tus Ideas en Realidad
           </div>
         </motion.div>
         <motion.div
@@ -52,7 +52,7 @@ export const Hero = () => {
               className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
               onClick={() => setIsModalOpen(true)}
             >
-              Contacto
+              Hablemos
             </div>
           </div>
         </motion.div>

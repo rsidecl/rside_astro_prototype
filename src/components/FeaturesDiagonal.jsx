@@ -32,21 +32,21 @@ export const FeaturesDiagonal = () => {
         <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
             <span className="custom-block-subtitle">
-              Acelera el desarrollo de tu sitio o aplicacion.
+              Impulsa el Desarrollo de tu Sitio o Aplicación
             </span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Nuestros servicios llevan tu desarrollo de comienzo a fin.
+              Servicios Integrales para un Desarrollo Exitoso de Principio a
+              Fin.
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
-              Es importante para nosotros ofrecer no solo el diseño,
-              implementacion y lanzamiento de tu aplicacion, si no tambien su
-              mantencion continua.
+              Nos Importa Ofrecer Diseño, Implementación, Lanzamiento y
+              Mantenimiento Continuo para tu Aplicación
             </p>
             <div
               className="w-[210px] h-12 custom-button-colored mr-10 "
               onClick={() => setIsModalOpen(true)}
             >
-              Contactanos
+              Conéctate con Nosotros
             </div>
           </div>
           <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">

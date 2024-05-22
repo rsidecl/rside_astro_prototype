@@ -22,26 +22,28 @@ export const Features1 = () => {
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
               <span className="custom-block-subtitle">
-                Desarrollamos proyectos a medida
+                Proyectos Personalizados para Impulsar tu Éxito
               </span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-                Nos preocupa cada detalle de tu negocio
+                Cuidamos Cada Detalle para el Éxito de tu Negocio
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Trabajamos con ideas y las transformamos en soluciones web.
+                Transformamos tus Ideas en Soluciones Web Innovadoras
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Atencion clinete 1 a 1</span>
+                  <span>Atención Personalizada para Cada Proyecto</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Analizis del nicho de negocio</span>
+                  <span>Análisis Exhaustivo de tu Nicho de Mercado</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Integracion con seguridad avanzada</span>
+                  <span>
+                    Integración con Seguridad Avanzada para tu Tranquilidad
+                  </span>
                 </li>
               </ul>
             </div>
