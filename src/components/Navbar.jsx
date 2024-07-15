@@ -5,8 +5,8 @@ import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-  { label: "[R] SIDE ]", href: "#home", ariaLabel: "Home" },
- /* { label: "Quienes Somos", href: "#features", ariaLabel: "Features" }, */
+  { label: "[R] SIDE", href: "#home", ariaLabel: "Home" },
+  /* { label: "Quienes Somos", href: "#features", ariaLabel: "Features" }, */
 ];
 
 export const Navbar = () => {
