@@ -24,7 +24,7 @@ export const Navbar = () => {
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
               <div className="text-white mr-2 text-6xl">
-                <img className="w-24" src="/rsidenb.png" />
+                <img className="w-32 h-auto" src="/rsidenb.png" />
               </div>
             </div>
           </a>
