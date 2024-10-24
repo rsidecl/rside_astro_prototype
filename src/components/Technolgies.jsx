@@ -1,13 +1,17 @@
-export const Technolgies = () => {
+export const Technologies = () => {
   return (
-    <div className='bg-customDarkBg1 flex justify-center items-center gap-20 mt-10'>
-      <img className='' src='/assets/icons/github.svg' alt='' />
-      <img src='/assets/icons/aws.svg' alt='' />
-      <img src='/assets/icons/ruby.svg' alt='' />
-      <img src='/assets/icons/astro.svg' alt='' />
-      <img src='/assets/icons/next.svg' alt='' />
-      <img src='/assets/icons/react.svg' alt='' />
-      <img src='/assets/icons/figma.svg' alt='' />
+    <div className='bg-customDarkBg1 flex flex-wrap justify-center items-center gap-10 mt-10 p-4'>
+      <img
+        className='h-12 w-auto'
+        src='/assets/icons/github.svg'
+        alt='GitHub'
+      />
+      <img className='h-12 w-auto' src='/assets/icons/aws.svg' alt='AWS' />
+      <img className='h-12 w-auto' src='/assets/icons/ruby.svg' alt='Ruby' />
+      <img className='h-12 w-auto' src='/assets/icons/astro.svg' alt='Astro' />
+      <img className='h-12 w-auto' src='/assets/icons/next.svg' alt='Next.js' />
+      <img className='h-12 w-auto' src='/assets/icons/react.svg' alt='React' />
+      <img className='h-12 w-auto' src='/assets/icons/figma.svg' alt='Figma' />
     </div>
   )
 }
