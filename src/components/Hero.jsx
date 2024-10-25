@@ -1,7 +1,12 @@
+import React, { useState } from 'react'
+import { ContactModal } from './ContactModal' // Asegúrate de ajustar la ruta
+
 export const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <section
-      className='w-full flex flex-col justify-center items-center bg-customDarkBg1 hero-bg-gradient'
+      className='w-full flex justify-center items-center bg-customDarkBg1 hero-bg-gradient'
       id='home'
     >
       <div className='w-full max-w-4xl flex flex-col justify-center items-center pt-16 text-center'>
@@ -9,74 +14,25 @@ export const Hero = () => {
           Explora un Nuevo Mundo de Oportunidades con Nosotros
         </div>
 
-        <div className='text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide text-white px-4 sm:px-8 md:px-12 lg:px-4'>
-          <span className='md:inline'>
-            Impulsa tu Negocio con las Herramientas Más Innovadoras
-          </span>
+        <div className='text-5xl sm:text-6xl lg:text-7xl font-bold tracking-wide text-white px-8'>
+          Impulsa tu Negocio con las Herramientas Más Innovadoras
         </div>
 
-        <div className='text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-4 sm:px-12'>
+        <div className='text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12'>
           Soluciones Personalizadas para Convertir tus Ideas en Realidad
         </div>
-
-        <div className='mt-10'>
-          <a href=''>
-            <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-full sm:w-52 h-12'>
-              Hablemos
-            </button>
-          </a>
+        <div>
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-52 h-12 mt-10'
+          >
+            Hablemos
+          </button>
         </div>
-
-        <div className='mt-10 w-full'>
-          <img
-            className='rounded-lg w-full h-auto'
-            src='/assets/images/ciniespic.jpg'
-            alt='Descripción de la imagen'
-          />
-        </div>
-
-        <div className='flex flex-wrap justify-center gap-4 mt-10'>
-          <img
-            className='w-20 h-auto'
-            src='/assets/icons/umce.svg'
-            alt='logo umce'
-          />
-          <img
-            className='w-20 h-auto'
-            src='assets/icons/cinies.svg'
-            alt='logo cinies'
-          />
-          <img
-            className='w-20 h-auto'
-            src='/assets/icons/umce.svg'
-            alt='logo umce'
-          />
-          <img
-            className='w-20 h-auto'
-            src='assets/icons/cinies.svg'
-            alt='logo cinies'
-          />
-          <img
-            className='w-20 h-auto'
-            src='/assets/icons/umce.svg'
-            alt='logo umce'
-          />
-          <img
-            className='w-20 h-auto'
-            src='assets/icons/cinies.svg'
-            alt='logo cinies'
-          />
-          <img
-            className='w-20 h-auto'
-            src='/assets/icons/umce.svg'
-            alt='logo umce'
-          />
-          <img
-            className='w-20 h-auto'
-            src='assets/icons/cinies.svg'
-            alt='logo cinies'
-          />
-        </div>
+        <ContactModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
       </div>
     </section>
   )
