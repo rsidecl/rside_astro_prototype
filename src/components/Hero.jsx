@@ -3,6 +3,17 @@ import { ContactModal } from './ContactModal' // Asegúrate de ajustar la ruta
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const images = ['/assets/images/cinies.jpg', '/assets/images/ganzo.jpg']
+
+  const nextSlide = () => {
+    setCurrentIndex((currentIndex + 1) % images.length)
+  }
+
+  const prevSlide = () => {
+    setCurrentIndex((currentIndex - 1 + images.length) % images.length)
+  }
 
   return (
     <section
@@ -33,6 +44,66 @@ export const Hero = () => {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
         />
+        <div className='mt-10'>
+          <img
+            src={images[currentIndex]}
+            alt={`Slide ${currentIndex + 1}`}
+            className='w-full rounded-lg'
+          />
+        </div>
+        <div className='flex justify-center mt-4 space-x-2'>
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-2 h-2 rounded-full ${
+                currentIndex === index ? 'bg-blue-500' : 'bg-gray-500'
+              }`}
+            />
+          ))}
+        </div>
+        <div className='flex flex-wrap justify-center gap-4 mt-10'>
+          <img
+            className='w-20 h-auto'
+            src='/assets/icons/umce.svg'
+            alt='logo umce'
+          />
+          <img
+            className='w-20 h-auto'
+            src='assets/icons/cinies.svg'
+            alt='logo cinies'
+          />
+          <img
+            className='w-20 h-auto'
+            src='/assets/icons/umce.svg'
+            alt='logo umce'
+          />
+          <img
+            className='w-20 h-auto'
+            src='assets/icons/cinies.svg'
+            alt='logo cinies'
+          />
+          <img
+            className='w-20 h-auto'
+            src='/assets/icons/umce.svg'
+            alt='logo umce'
+          />
+          <img
+            className='w-20 h-auto'
+            src='assets/icons/cinies.svg'
+            alt='logo cinies'
+          />
+          <img
+            className='w-20 h-auto'
+            src='/assets/icons/umce.svg'
+            alt='logo umce'
+          />
+          <img
+            className='w-20 h-auto'
+            src='assets/icons/cinies.svg'
+            alt='logo cinies'
+          />
+        </div>
       </div>
     </section>
   )

@@ -1,4 +1,22 @@
+import React, { useState } from 'react'
+
 export const Services = () => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const images = [
+    '/assets/images/image.png',
+    '/assets/images/imagen2.png',
+    '/assets/images/imagen3.png'
+  ]
+
+  const nextSlide = () => {
+    setCurrentIndex((currentIndex + 1) % images.length)
+  }
+
+  const prevSlide = () => {
+    setCurrentIndex((currentIndex - 1 + images.length) % images.length)
+  }
+
   return (
     <div className='bg-customDarkBg1 w-full flex flex-col md:flex-row mx-4 md:mx-10 lg:mx-40 mt-10'>
       <div className='flex-1'>
@@ -20,12 +38,24 @@ export const Services = () => {
           </button>
         </a>
       </div>
-      <div className='flex-1 flex justify-center'>
+
+      <div className='flex-1 flex justify-center items-center relative'>
         <img
-          className='w-full max-w-md mt-10 lg:mr-40'
-          src='/assets/images/yamete2.jpg'
-          alt='Servicio'
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex + 1}`}
+          className='w-96 h-96 rounded-lg'
         />
+        <div className='flex  space-x-2 translate-y-52 -translate-x-52'>
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-2 h-2 rounded-full ${
+                currentIndex === index ? 'bg-blue-500' : 'bg-gray-500'
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
