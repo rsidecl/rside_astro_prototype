@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+import { Developers } from "../components/Developers.jsx";
+---
+
+
+<Layout title="Tailcast">
+    <Navbar client:load />
+    <Developers client:load />
+    <Footer />
+     </Layout>
