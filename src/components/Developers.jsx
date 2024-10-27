@@ -3,45 +3,44 @@ import { useState } from 'react'
 
 export const Developers = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
-    <div className=' bg-customDarkBg1  justify-center '>
-      <div
-        className='bg-customDarkBg1 flex  justify-center
-      '
-      >
-        <div className='w-[370px] h-[440px] bg-card rounded-lg mx-12 my-12 px-10 py-10'>
+    <div className='bg-customDarkBg1 flex flex-col items-center py-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='w-[370px] h-auto bg-card rounded-lg p-6'>
           <h1 className='text-white'>Sam Kee Tang</h1>
           <h2 className='text-gray-400 mb-4'>
             Community Manager, Web Designer
           </h2>
           <p className='text-white'>
-            !Hola a todos! Soy Sam, el <br /> Community Manager. Mi mision es{' '}
+            ¡Hola a todos! Soy Sam, el <br /> Community Manager. Mi misión es{' '}
             <br /> construir puentes entre nuestra <br /> marca y nuestra
             comunidad <br />
-            global. Estoy aqui para <br /> escuchar, informar y hacer <br />
+            global. Estoy aquí para <br /> escuchar, informar y hacer <br />
             crecer este espacio juntos. <br />
-            !Bienvenidos a nuestra comunidad!{' '}
+            ¡Bienvenidos a nuestra comunidad!
           </p>
         </div>
-        <div className='w-[370px] h-[440px] bg-card rounded-lg mx-12 my-12 px-10 py-10'>
-          <h1 className='text-white'> Fabian Pino </h1>
-          <h2 className='text-gray-400  mb-4'>CTO</h2>
+
+        <div className='w-[370px] h-auto bg-card rounded-lg p-6'>
+          <h1 className='text-white'>Fabian Pino</h1>
+          <h2 className='text-gray-400 mb-4'>CTO</h2>
           <p className='text-white'>
-            !Saludos a todos! Soy Fabian, <br /> el CTO de R-Side. es un honor{' '}
-            <br /> liderar este equipo <br /> apasiando y visionario en <br />
-            nuestra mision de mision de la <br /> empresa Estoy aqui para <br />{' '}
-            impulsar de la innoavacion, el <br /> crecimiento y la excelencia en{' '}
+            ¡Saludos a todos! Soy Fabian, <br /> el CTO de R-Side. Es un honor{' '}
+            <br /> liderar este equipo <br /> apasionado y visionario en <br />
+            nuestra misión de la empresa. Estoy aquí para <br />
+            impulsar la innovación, el <br /> crecimiento y la excelencia en{' '}
             <br />
-            todo lo que hacemos. !Juntos, <br />
-            alcanzaremos nuevos horizontes <br />y dejaremos una marca <br />
-            significativa en el mundo!.{' '}
+            todo lo que hacemos. ¡Juntos, <br />
+            alcanzaremos nuevos horizontes <br /> y dejaremos una marca <br />
+            significativa en el mundo!
           </p>
         </div>
-        <div className='w-[370px] h-[440px] bg-card rounded-lg mx-12 my-12 px-10 py-10'>
+
+        <div className='w-[370px]h-auto bg-card rounded-lg p-6'>
           <h1 className='text-white'>Tomas Muñoz</h1>
-          <h2 className='text-gray-400 mb-4'>Fronted Developer</h2>
+          <h2 className='text-gray-400 mb-4'>Frontend Developer</h2>
           <p className='text-white'>
-            {' '}
             ¡Saludos, mundo digital! Soy <br />
             Tomás, el desarrollador de <br /> código en R-Side. Mi pasión <br />{' '}
             por la programación se une a la <br /> visión de nuestro equipo para{' '}
@@ -53,23 +52,22 @@ export const Developers = () => {
             <br /> digital!
           </p>
         </div>
-      </div>
-      <div className='bg-customDarkBg1  flex justify-center'>
-        <div className='w-[370px] h-[440px] bg-card rounded-lg mx-12 my-12 px-10 py-10'>
+
+        <div className='w-[370px] h-auto bg-card rounded-lg p-6'>
           <h1 className='text-white'>Javier Figueroa</h1>
-          <h2 className='text-gray-400 mb-4'>Fronted Developer</h2>
+          <h2 className='text-gray-400 mb-4'>Frontend Developer</h2>
           <p className='text-white'>
             ¡Hola a todos! Soy Javier, el <br />
             responsable del Frontend. Mi <br />
-            pasión es crear experiencias
-            <br />
+            pasión es crear experiencias <br />
             digitales impactantes y <br /> amigables para nuestros usuarios.
-            ¡Listo para llevar <br /> nuestra plataforma al siguiente <br />{' '}
+            ¡Listo para llevar <br /> nuestra plataforma al siguiente <br />
             nivel!
           </p>
         </div>
-        <div className='w-[370px] h-[440px] bg-card rounded-lg mx-12 my-12 px-10 py-10'>
-          <h1 className='text-white'> Renato Baez</h1>
+
+        <div className='w-[370px] h-auto bg-card rounded-lg p-6'>
+          <h1 className='text-white'>Renato Baez</h1>
           <h2 className='text-gray-400 mb-4'>Backend Developer</h2>
           <p className='text-white'>
             ¡Hola a todos! Soy Renato, el <br />
@@ -80,13 +78,14 @@ export const Developers = () => {
             rendimiento óptimo y una <br />
             experiencia sin contratiempos <br />
             para nuestros usuarios. ¡Vamos <br />
-            a trabajar juntos para llevar <br /> nuestra visión al siguiente
-            nivel!
+            a trabajar juntos para llevar <br />
+            nuestra visión al siguiente nivel!
           </p>
         </div>
-        <div className='w-[370px] h-[440px] bg-card rounded-lg mx-12 my-12 px-10 py-10'>
+
+        <div className='w-[370px] h-auto bg-card rounded-lg p-6'>
           <h1 className='text-white'>Tiseran Morgue</h1>
-          <h2 className='text-gray-400 mb-4'> Diseñador UX/UI</h2>
+          <h2 className='text-gray-400 mb-4'>Diseñador UX/UI</h2>
           <p className='text-white'>
             ¡Hola a todos! Soy Tiseran, el <br />
             diseñador UX/UI de [R]-Side. Me <br />
@@ -101,14 +100,17 @@ export const Developers = () => {
           </p>
         </div>
       </div>
-      <div className='flex justify-center'>
+
+      {/* Botón de "Hablemos" y Modal */}
+      <div className='flex justify-center mt-8'>
         <button
           onClick={() => setIsModalOpen(true)}
-          className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-52 h-12 mt-10'
+          className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-52 h-12'
         >
           Hablemos
         </button>
       </div>
+
       <ContactModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
