@@ -62,44 +62,44 @@ export const Hero = () => {
             />
           ))}
         </div>
-        <div className='flex flex-wrap justify-center gap-4 mt-10'>
+        <div className='flex  gap-10 justify-center  mt-10'>
           <img
-            className='w-20 h-auto'
+            className='w-36 h-auto'
             src='/assets/icons/umce.svg'
             alt='logo umce'
           />
           <img
-            className='w-20 h-auto'
+            className='w-36 h-auto'
             src='assets/icons/cinies.svg'
             alt='logo cinies'
           />
           <img
-            className='w-20 h-auto'
+            className='w-36 h-auto'
             src='/assets/icons/umce.svg'
             alt='logo umce'
           />
           <img
-            className='w-20 h-auto'
+            className='w-36 h-auto'
             src='assets/icons/cinies.svg'
             alt='logo cinies'
           />
           <img
-            className='w-20 h-auto'
+            className='w-36 h-auto'
             src='/assets/icons/umce.svg'
             alt='logo umce'
           />
           <img
-            className='w-20 h-auto'
+            className='w-36h-auto'
             src='assets/icons/cinies.svg'
             alt='logo cinies'
           />
           <img
-            className='w-20 h-auto'
+            className='w-36 h-auto'
             src='/assets/icons/umce.svg'
             alt='logo umce'
           />
           <img
-            className='w-20 h-auto'
+            className='w-36 h-auto'
             src='assets/icons/cinies.svg'
             alt='logo cinies'
           />
