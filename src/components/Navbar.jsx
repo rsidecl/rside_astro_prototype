@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const navbarLinks = [{ label: 'R-[ SIDE ]', href: '#home', ariaLabel: 'Home' }]
+const navbarLinks = [{ label: 'R-[ SIDE ]', href: '/', ariaLabel: 'Home' }]
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,10 +15,10 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <a className='navbar-link' href='#home' aria-label='Home'>
+          <a className='navbar-link' href='/' aria-label='Home'>
             <div className='flex justify-start items-center grow basis-0'>
-              <div className='text-white mr-2 text-6xl'>
-                <img className='w-24' src='/rsidenb.png' />
+              <div className='text-white mr-2 '>
+                <img className='w-32' src='/rsidenb.png' />
               </div>
             </div>
           </a>
@@ -29,10 +29,10 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className='hidden lg:flex h-full pl-12 pb-2'>
+          <div className='hidden lg:flex h-full  pl-12 pb-2'>
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <a
-                className='navbar-link'
+                className='navbar-link text-4xl'
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
@@ -47,27 +47,11 @@ export const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
-        >
-          <div className='grow basis-0 justify-end hidden lg:flex'>
-            <a
-              className='text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex'
-              href='Developers'
-              target='_blank'
-              aria-label='source code'
-            >
-              <span className='pt-px'>Desarrolladores</span>
-            </a>
-          </div>
-        </motion.div>
+        ></motion.div>
         <div
           className='lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2'
           onClick={() => setIsOpen(!isOpen)}
-        >
-          <div className='w-5 h-0.5 bg-gray-500  mb-1'></div>
-          <div className='w-5 h-0.5 bg-gray-500  mb-1'></div>
-          <div className='w-5 h-0.5 bg-gray-500 '></div>
-        </div>
+        ></div>
       </div>
       {/* Mobile navbar */}
       <AnimatePresence>
@@ -86,7 +70,7 @@ export const Navbar = () => {
               {navbarLinks.map(({ label, href, ariaLabel }) => (
                 <a
                   key={href}
-                  className='navbar-link'
+                  className='navbar-link text-4xl'
                   href={href}
                   onClick={() => setIsOpen(false)}
                   aria-label={ariaLabel}
@@ -94,14 +78,6 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-              <a
-                className='text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex'
-                href='https://github.com/matt765/Tidestream'
-                target='_blank'
-              >
-                Desarrolladores
-              </a>
             </div>
           </motion.div>
         )}

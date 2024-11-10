@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import DeveloperService from './DeveloperService'
 
 export const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -18,35 +19,33 @@ export const Services = () => {
   }
 
   return (
-    <div className='bg-customDarkBg1 w-full flex flex-col md:flex-row mx-4 md:mx-10 lg:mx-40 mt-10'>
-      <div className='flex-1'>
-        <h1 className='text-customSecondary font-bold text-4xl my-6'>
+    <div className='bg-customDarkBg1 w-full flex flex-col md:flex-row mx-4 md:mx-10 lg:mx-60 mt-10'>
+      <div className='flex-1 text-center md:text-left'>
+        <h1 className='text-customSecondary font-inconsolata text-2xl my-4 md:my-6'>
           Impulsa el Desarrollo de tu <br /> Sitio o Aplicación
         </h1>
-        <h1 className='text-6xl text-white font-bold my-6'>
-          Servicios Integrales para <br /> un Desarrollo Exitoso de <br />
+        <h1 className='text-3xl sm:text-4xl text-white font-bold my-4 md:my-6'>
+          Servicios Integrales para <br /> un Desarrollo Exitoso de <br />{' '}
           Principio a Fin.
         </h1>
-        <h3 className='text-white text-2xl my-6'>
+        <h3 className='text-white text-lg sm:text-xl my-4 md:my-6'>
           Nos Importa Ofrecer Diseño, <br /> Implementación, Lanzamiento y{' '}
-          <br />
-          Mantenimiento continuo para tu proyecto
+          <br /> Mantenimiento continuo para tu proyecto
         </h3>
-        <a href=''>
-          <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold  px-4 rounded w-full sm:w-52 h-12 mt-10 ml-40 '>
-            Nuestros <br />
-            Servicios
+        <a href='service'>
+          <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-full sm:w-52 h-14  mt-8 md:mt-10'>
+            Nuestros <br /> Servicios
           </button>
         </a>
       </div>
 
-      <div className='flex-1 flex justify-center items-center relative mr-40'>
+      <div className='flex-1 flex justify-center items-center relative mt-8 lg:mr-72 md:mt-0'>
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
-          className='w-96 h-96 rounded-lg'
+          className='w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-lg'
         />
-        <div className='flex  space-x-2 translate-y-52 -translate-x-52'>
+        <div className='flex space-x-2 mt-4 md:absolute md:bottom-4'>
           {images.map((_, index) => (
             <button
               key={index}

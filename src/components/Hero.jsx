@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { ContactModal } from './ContactModal' // Asegúrate de ajustar la ruta
+import { ContactModal } from './ContactModal'
+import { Companies } from './Companies'
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -25,17 +26,19 @@ export const Hero = () => {
           Explora un Nuevo Mundo de Oportunidades con Nosotros
         </div>
 
-        <div className='text-5xl sm:text-6xl lg:text-7xl font-bold tracking-wide text-white px-8'>
-          Impulsa tu Negocio con las Herramientas Más Innovadoras
+        <div className='text-5xl sm:text-5xl lg:text-5xl font-bold tracking-wide text-white px-8'>
+          Impulsa tu Negocio con <br />
+          las Herramientas Más Innovadoras
         </div>
 
-        <div className='text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12'>
-          Soluciones Personalizadas para Convertir tus Ideas en Realidad
+        <div className='text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-10'>
+          Soluciones Personalizadas para <br />
+          Convertir tus Ideas en Realidad
         </div>
         <div>
           <button
             onClick={() => setIsModalOpen(true)}
-            className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-52 h-12 mt-10'
+            className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded-xl w-52 h-12 mt-10'
           >
             Hablemos
           </button>
@@ -62,48 +65,7 @@ export const Hero = () => {
             />
           ))}
         </div>
-        <div className='flex  gap-10 justify-center  mt-10'>
-          <img
-            className='w-36 h-auto'
-            src='/assets/icons/umce.svg'
-            alt='logo umce'
-          />
-          <img
-            className='w-36 h-auto'
-            src='assets/icons/cinies.svg'
-            alt='logo cinies'
-          />
-          <img
-            className='w-36 h-auto'
-            src='/assets/icons/umce.svg'
-            alt='logo umce'
-          />
-          <img
-            className='w-36 h-auto'
-            src='assets/icons/cinies.svg'
-            alt='logo cinies'
-          />
-          <img
-            className='w-36 h-auto'
-            src='/assets/icons/umce.svg'
-            alt='logo umce'
-          />
-          <img
-            className='w-36h-auto'
-            src='assets/icons/cinies.svg'
-            alt='logo cinies'
-          />
-          <img
-            className='w-36 h-auto'
-            src='/assets/icons/umce.svg'
-            alt='logo umce'
-          />
-          <img
-            className='w-36 h-auto'
-            src='assets/icons/cinies.svg'
-            alt='logo cinies'
-          />
-        </div>
+        <Companies />
       </div>
     </section>
   )

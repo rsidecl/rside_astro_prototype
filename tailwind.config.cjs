@@ -5,9 +5,9 @@ module.exports = {
     extend: {
       colors: {
         customPrimary: 'rgb(99, 102, 241)',
-        customSecondary: 'rgb(161, 163, 247)',
+        customSecondary: 'rgb(158, 160, 243)',
         customDarkBg1: 'rgb(31, 32, 35)',
-        customDarkBg2: 'rgb(38, 39, 43)',
+        customDarkBg2: 'rgb(61, 61, 61, 50%)',
         customDarkBg3: 'rgb(48, 49, 54)',
         customDarkBg3Hover: 'rgb(55, 56, 62)',
         customContentSubtitle: 'rgb(178, 184, 205)',
@@ -19,7 +19,7 @@ module.exports = {
         card: 'rgb(61, 61, 61)'
       },
       fontFamily: {
-        Inter: 'Inter'
+        inconsolata: ['Inconsolata', 'sans-serif']
       },
       screens: {
         xs: '530px',

@@ -38,7 +38,7 @@ export const ContactModal = ({ isOpen, onClose }) => {
 
   return (
     <div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50'>
-      <div className='bg-customDarkBg1 p-6 shadow-lg w-2/5 h-2/5 flex relative'>
+      <div className='bg-customDarkBg1 bg-opacity-80 p-6 shadow-lg w-2/5 h-2/5 flex relative rounded-lg'>
         <button
           type='button'
           onClick={onClose}
@@ -53,11 +53,11 @@ export const ContactModal = ({ isOpen, onClose }) => {
           </h2>
 
           <li className='text-gray-400 mt-10 text-left ml-8'>Soluciones</li>
-          <li className='text-gray-400  text-left  ml-8'>Integraciones</li>
-          <li className='text-gray-400  text-left  ml-8'>Mantenimiento</li>
+          <li className='text-gray-400 text-left ml-8'>Integraciones</li>
+          <li className='text-gray-400 text-left ml-8'>Mantenimiento</li>
         </div>
-        <div className='w-1/2 flex-col mt-10 '>
-          <h2 className='text-md font-bold text-left text-white mt-10 '>
+        <div className='w-1/2 flex-col mt-10'>
+          <h2 className='text-md font-bold text-left text-white mt-10'>
             Unete a las empresas que <br /> confian en nosotros.
           </h2>
 
