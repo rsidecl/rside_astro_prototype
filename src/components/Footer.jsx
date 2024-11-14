@@ -1,38 +1,29 @@
 export const Footer = () => {
   return (
     <footer>
-      <div className='pt-10 lg:pt-20 lg:pb-12 bg-customDarkBg1 radius-for-skewed '>
-        <div className='lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden w-2/3 mx-auto lg:block'></div>
-        <div className='container mx-auto px-4 w-full max-w-6xl '>
-          <div className='flex flex-col items-center '>
-            <div className='mb-16 lg:mb-0 '>
-              <div className='flex justify-center '>
-                <img className='w-60' src='/rsidenb.png' alt='Logo' />
-              </div>
-              <div className='flex justify-center mt-4 lg:mr-14 '>
-                <a
-                  className='inline-block w-10 h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray hover:bg-gray-700 rounded-xl'
-                  href='#'
-                >
-                  <img src='/assets/icons/ig.svg' alt='Instagram' />
-                </a>
-                <a
-                  className='inline-block w-10 h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray hover:bg-gray-700 rounded-xl'
-                  href='#'
-                >
-                  <img src='/assets/icons/x.svg' alt='X' />
-                </a>
-              </div>
-            </div>
-          </div>
+      <section className='bg-customDarkBg1  border-t-2   border-[rgb(255,255,255,0.2)] w-2/3  mx-auto mt-10'>
+        <div className='mx-auto '>
+          <a href='/'>
+            <img
+              className='w-40 mx-20 lg:mx-auto'
+              src='/rsidenb.png'
+              alt='Logo'
+            />
+          </a>
         </div>
-      </div>
+        <div className='flex justify-center gap-4 mb-10 lg:mr-10 '>
+          <a href='https://www.instagram.com/rsideweb/'>
+            <img src='/assets/icons/ig.svg' alt='Instagram' />
+          </a>
+          <a href='https://x.com/?lang=es'>
+            <img src='/assets/icons/x.svg' alt='X' />
+          </a>
+        </div>
+      </section>
       <div>
-        <div className='text-left '>
-          <p className='text-gray-400'>Politicas y privacidad</p>
-        </div>
-        <div className='text-right mb-4 '>
-          <p className='text-gray-400'>© 2024  [R] - Side </p>
+        <div className=' flex justify-between my-4 mx-4'>
+          <p className='text-gray-400 text-left'>Politicas y privacidad</p>
+          <p className='text-gray-400 text-right'>© 2024  [R] - Side </p>
         </div>
       </div>
     </footer>
