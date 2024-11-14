@@ -35,7 +35,7 @@ export const ContactModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null
 
   return (
-    <div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50'>
+    <div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-90'>
       <div className='bg-customDarkBg1 bg-opacity-80 p-6 shadow-lg w-full sm:w-3/4 md:w-2/3 lg:w-2/5 h-auto flex flex-col md:flex-row relative rounded-lg'>
         <button
           type='button'
@@ -62,13 +62,13 @@ export const ContactModal = ({ isOpen, onClose }) => {
 
         {/* Sección Derecha */}
         <div className='md:w-1/2 flex flex-col mt-6 md:mt-10 md:ml-4 items-start'>
-          <h2 className='text-md font-bold text-left text-white mt-6 md:mt-10'>
+          <h2 className='text-md font-bold text-left text-white mx-auto mt-6 md:mt-10'>
             Únete a las empresas que <br /> confían en nosotros.
           </h2>
 
           <form
             onSubmit={handleSubmit}
-            className='flex flex-col items-start mt-4'
+            className='flex flex-col mx-auto items-start mt-4'
           >
             <label htmlFor='email' className='text-white mt-2'>
               E-mail:
@@ -100,3 +100,4 @@ export const ContactModal = ({ isOpen, onClose }) => {
     </div>
   )
 }
+
