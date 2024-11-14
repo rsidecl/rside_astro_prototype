@@ -24,7 +24,7 @@ export const Projects = () => {
 
       <div className='flex-1 mt-6 lg:mt-10 mx-auto rounded-lg'>
         <div className='flex flex-col md:flex-row items-center md:items-stretch gap-6'>
-          <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 px-4 rounded-lg'>
+          <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 px-4 lg:mb-4 rounded-lg'>
             <img
               className='w-16 h-16 lg:w-24 lg:h-24 rounded-lg mx-auto mb-4'
               src='/assets/icons/settings.svg'
@@ -42,7 +42,7 @@ export const Projects = () => {
             </p>
           </div>
 
-          <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 px-4 mt-6 md:mt-0 rounded-lg'>
+          <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 px-4 lg:mb-2 rounded-lg lg:mt-4'>
             <img
               className='w-16 h-16 lg:w-24 lg:h-24 rounded-lg mx-auto mb-4'
               src='/assets/icons/visualcod.svg'
@@ -61,7 +61,7 @@ export const Projects = () => {
         </div>
 
         <div className='flex flex-col md:flex-row items-center md:items-stretch gap-6 mt-6'>
-          <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 px-4 rounded-lg'>
+          <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 lg:mb-4 px-4 rounded-lg'>
             <img
               className='w-16 h-16 lg:w-24 lg:h-24 rounded-lg mx-auto mb-4'
               src='/assets/icons/screens.svg'
@@ -78,7 +78,7 @@ export const Projects = () => {
             </p>
           </div>
 
-          <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 px-4 mt-6 md:mt-0 rounded-lg'>
+          <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 px-4 mt-6 md:mt-0 rounded-lg lg:mt-4'>
             <img
               className='w-16 h-16 lg:w-24 lg:h-24 rounded-lg mx-auto mb-4'
               src='/assets/icons/pincel.svg'
