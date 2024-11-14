@@ -33,7 +33,7 @@ export const Services = () => {
           <br /> Mantenimiento continuo para tu proyecto
         </h3>
         <a href='service'>
-          <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-full sm:w-52 h-14  mt-8 md:mt-10'>
+          <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-40 sm:w-52 h-14  mt-8 md:mt-10'>
             Nuestros <br /> Servicios
           </button>
         </a>
@@ -50,7 +50,7 @@ export const Services = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full ${
+              className={`w-2 h-2 rounded-full mt-64 -translate-x-40 lg:translate-x-0 ${
                 currentIndex === index ? 'bg-blue-500' : 'bg-gray-500'
               }`}
             />

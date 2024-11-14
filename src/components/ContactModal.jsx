@@ -9,9 +9,7 @@ export const ContactModal = ({ isOpen, onClose }) => {
   const handleSubmit = e => {
     e.preventDefault()
 
-    const templateParams = {
-      email: email
-    }
+    const templateParams = { email }
 
     emailjs
       .send(
@@ -38,7 +36,7 @@ export const ContactModal = ({ isOpen, onClose }) => {
 
   return (
     <div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50'>
-      <div className='bg-customDarkBg1 bg-opacity-80 p-6 shadow-lg w-2/5 h-2/5 flex relative rounded-lg'>
+      <div className='bg-customDarkBg1 bg-opacity-80 p-6 shadow-lg w-full sm:w-3/4 md:w-2/3 lg:w-2/5 h-auto flex flex-col md:flex-row relative rounded-lg'>
         <button
           type='button'
           onClick={onClose}
@@ -46,22 +44,32 @@ export const ContactModal = ({ isOpen, onClose }) => {
         >
           &times; {/* Icono de X */}
         </button>
-        <div className='w-1/2 mt-10 ml-8'>
-          <h1 className='text-white text-3xl font-bold'>Dejanos tu correo</h1>
-          <h2 className='text-customSecondary font-bold text-3xl'>
-            Y desarrollemos tu <br /> proximo proyecto
-          </h2>
 
-          <li className='text-gray-400 mt-10 text-left ml-8'>Soluciones</li>
-          <li className='text-gray-400 text-left ml-8'>Integraciones</li>
-          <li className='text-gray-400 text-left ml-8'>Mantenimiento</li>
+        {/* Sección Izquierda */}
+        <div className='md:w-1/2 mt-6 md:mt-10 md:ml-8'>
+          <h1 className='text-white text-xl sm:text-2xl lg:text-3xl font-bold'>
+            Déjanos tu correo
+          </h1>
+          <h2 className='text-customSecondary font-bold text-xl sm:text-2xl lg:text-3xl mt-4'>
+            Y desarrollemos tu <br /> próximo proyecto
+          </h2>
+          <ul className='text-gray-400 mt-6 ml-6 md:ml-8 space-y-2'>
+            <li>Soluciones</li>
+            <li>Integraciones</li>
+            <li>Mantenimiento</li>
+          </ul>
         </div>
-        <div className='w-1/2 flex-col mt-10'>
-          <h2 className='text-md font-bold text-left text-white mt-10'>
-            Unete a las empresas que <br /> confian en nosotros.
+
+        {/* Sección Derecha */}
+        <div className='md:w-1/2 flex flex-col mt-6 md:mt-10 md:ml-4 items-start'>
+          <h2 className='text-md font-bold text-left text-white mt-6 md:mt-10'>
+            Únete a las empresas que <br /> confían en nosotros.
           </h2>
 
-          <form onSubmit={handleSubmit} className='flex flex-col items-start'>
+          <form
+            onSubmit={handleSubmit}
+            className='flex flex-col items-start mt-4'
+          >
             <label htmlFor='email' className='text-white mt-2'>
               E-mail:
             </label>
@@ -72,7 +80,7 @@ export const ContactModal = ({ isOpen, onClose }) => {
               placeholder='E-mail'
               onChange={e => setEmail(e.target.value)}
               required
-              className='border rounded w-40 p-2 mt-1'
+              className='border rounded w-full sm:w-52 p-2 mt-1'
             />
             {successMessage && (
               <p className='text-green-500 mt-2'>{successMessage}</p>
@@ -82,7 +90,7 @@ export const ContactModal = ({ isOpen, onClose }) => {
             )}
             <button
               type='submit'
-              className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded mt-6 w-40'
+              className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded mt-6 w-full sm:w-52'
             >
               Hablemos
             </button>
