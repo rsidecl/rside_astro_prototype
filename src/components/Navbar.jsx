@@ -53,7 +53,6 @@ export const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
         ></div>
       </div>
-      {/* Mobile navbar */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -85,3 +84,4 @@ export const Navbar = () => {
     </nav>
   )
 }
+
