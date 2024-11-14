@@ -6,7 +6,12 @@ export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const images = ['/assets/images/cinies.jpg', '']
+  // Agrega las rutas de tus imágenes aquí
+  const images = [
+    '/assets/images/cinies.jpg',
+    '/assets/images/dummy1.jpg',
+    '/assets/images/dummy2.jpg'
+  ]
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % images.length)
@@ -18,12 +23,14 @@ export const Hero = () => {
 
   return (
     <section
-      className='w-full flex justify-center items-center bg-customDarkBg1 hero-bg-gradient'
+      className='w-full flex justify-center items-center mx-auto bg-customDarkBg1 hero-bg-gradient'
       id='home'
     >
-      <div className='w-full max-w-4xl flex flex-col justify-center items-center pt-16 text-center'>
-        <div className='text-customSecondary text-sm sm:text-base mb-6 sm:mt-32 mt-16 font-bold'>
-          Explora un Nuevo Mundo de Oportunidades con Nosotros
+      <div className='w-full max-w-4xl flex flex-col justify-center items-center pt-16 text-center mx-auto'>
+        <div className='mb-6 sm:mt-32 mt-16 font-bold'>
+          <h1 className='text-customSecondary text-xl lg:text-3xl mx-auto'>
+            Explora un Nuevo Mundo de Oportunidades con Nosotros
+          </h1>
         </div>
 
         <div className='text-5xl sm:text-5xl lg:text-5xl font-bold tracking-wide text-white px-8'>
@@ -47,13 +54,29 @@ export const Hero = () => {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
         />
-        <div className='mt-10'>
+
+        <div className='mt-10 relative'>
           <img
             src={images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
             className='w-full rounded-lg'
           />
+
+          <button
+            onClick={prevSlide}
+            className='absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black rounded-full p-2'
+          >
+            ◀
+          </button>
+          <button
+            onClick={nextSlide}
+            className='absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black rounded-full p-2'
+          >
+            ▶
+          </button>
         </div>
+
+        {/* Indicadores de las imágenes */}
         <div className='flex justify-center mt-4 space-x-2'>
           {images.map((_, index) => (
             <button
@@ -65,6 +88,7 @@ export const Hero = () => {
             />
           ))}
         </div>
+
         <Companies />
       </div>
     </section>

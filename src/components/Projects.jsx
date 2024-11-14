@@ -1,8 +1,8 @@
 export const Projects = () => {
   return (
-    <div className='flex flex-col lg:flex-row bg-customDarkBg1 mx-4 md:mx-10 lg:mx-32 xl:mx-60'>
-      <div className='flex-1 text-sm sm:text-base mb-6 sm:mt-16 lg:mt-32 font-bold'>
-        <h2 className='text-customSecondary text-lg sm:text-xl lg:text-2xl'>
+    <div className='flex flex-col lg:flex-row bg-customDarkBg1 mt-10 mx-4 md:mx-10 lg:mx-32 xl:mx-60'>
+      <div className='flex-1 text-sm sm:text-base mb-6 mx-auto sm:mt-16 lg:mt-32 font-bold'>
+        <h2 className='text-customSecondary text-2xl lg:text-2xl'>
           Proyectos Personalizados para <br /> Impulsar tu Éxito
         </h2>
         <h1 className='text-white text-2xl sm:text-3xl lg:text-4xl my-4 lg:my-6'>

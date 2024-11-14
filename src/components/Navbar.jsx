@@ -29,10 +29,10 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className='hidden lg:flex h-full  pl-12 pb-2'>
+          <div className=' lg:flex h-full  mx-2   pl-12 pb-2'>
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <a
-                className='navbar-link text-4xl'
+                className='navbar-link text-5xl'
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
@@ -49,7 +49,7 @@ export const Navbar = () => {
           exit={{ opacity: 0 }}
         ></motion.div>
         <div
-          className='lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2'
+          className='hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2'
           onClick={() => setIsOpen(!isOpen)}
         ></div>
       </div>
@@ -84,4 +84,3 @@ export const Navbar = () => {
     </nav>
   )
 }
-
