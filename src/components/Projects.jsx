@@ -1,8 +1,8 @@
 export const Projects = () => {
   return (
-    <div className='flex flex-col lg:flex-row bg-customDarkBg1 mt-10 mx-4 md:mx-10 lg:mx-32 xl:mx-60'>
-      <div className='flex-1 text-sm sm:text-base mb-6 mx-auto sm:mt-16 lg:mt-32 font-bold'>
-        <h2 className='text-customSecondary text-2xl lg:text-2xl'>
+    <section className='flex flex-col lg:flex-row bg-customDarkBg1 mt-10   md:mx-10 lg:mx-32 xl:mx-60'>
+      <div className='flex-1 text-sm sm:text-base mb-6  sm:mt-16 lg:mt-32 mx-auto  font-bold'>
+        <h2 className='text-customSecondary text-2xl  lg:text-2xl'>
           Proyectos Personalizados para <br /> Impulsar tu Éxito
         </h2>
         <h1 className='text-white text-2xl sm:text-3xl lg:text-4xl my-4 lg:my-6'>
@@ -21,7 +21,6 @@ export const Projects = () => {
           competitividad de cada negocio.
         </h3>
       </div>
-
       <div className='flex-1 mt-6 lg:mt-10 mx-auto rounded-lg'>
         <div className='flex flex-col md:flex-row items-center md:items-stretch gap-6'>
           <div className='bg-customDarkBg2 h-auto w-full md:w-72 lg:w-80 py-4 px-4 lg:mb-4 rounded-lg'>
@@ -96,6 +95,6 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

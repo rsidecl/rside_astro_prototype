@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import DeveloperService from './DeveloperService'
+import React, { useState, useEffect } from 'react'
 
 export const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -10,17 +9,23 @@ export const Services = () => {
     '/assets/images/imagen3.png'
   ]
 
+  // Depuración: Verificar cambios en currentIndex
+  useEffect(() => {
+    console.log('Current Index:', currentIndex)
+  }, [currentIndex])
+
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % images.length)
   }
 
   const prevSlide = () => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length)
+    console.log('Previous Slide Clicked:', currentIndex) // Debugging
   }
 
   return (
-    <div className='bg-customDarkBg1 w-full flex flex-col md:flex-row mx-4 md:mx-10  px-4 lg:mx-60 mt-10'>
-      <div className='flex-1 text-center md:text-left'>
+    <section className='bg-customDarkBg1 flex flex-col md:flex-row mx-4 md:mx-10 lg:w-full lg:mx-auto px-10 lg:px-20 mt-10'>
+      <div className='flex-1 text-left lg:ml-40'>
         <h1 className='text-customSecondary font-bold text-2xl my-4 md:my-6'>
           Impulsa el Desarrollo de tu <br /> Sitio o Aplicación
         </h1>
@@ -32,14 +37,17 @@ export const Services = () => {
           Nos Importa Ofrecer Diseño, <br /> Implementación, Lanzamiento y{' '}
           <br /> Mantenimiento continuo para tu proyecto
         </h3>
-        <a href='service'>
-          <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-40 sm:w-52 h-14 mt-8 md:mt-10'>
-            Nuestros <br /> Servicios
-          </button>
-        </a>
+        <div className='text-center'>
+          <a href='service'>
+            <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-40 sm:w-52 h-14 mt-8 md:mt-10'>
+              Nuestros Servicios
+            </button>
+          </a>
+        </div>
       </div>
 
-      <div className='flex-1 flex justify-center items-center relative mt-8 lg:mr-72 md:mt-0'>
+      {/* Carousel */}
+      <div className='flex-1 flex justify-center items-center relative mt-8 lg:mr-20'>
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
@@ -48,29 +56,27 @@ export const Services = () => {
         <button
           onClick={prevSlide}
           className='absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black rounded-full p-2 shadow-lg'
-          style={{ marginLeft: '-2rem' }}
         >
           ◀
         </button>
         <button
           onClick={nextSlide}
           className='absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black rounded-full p-2 shadow-lg'
-          style={{ marginRight: '-2rem' }}
         >
           ▶
         </button>
-        <div className='flex space-x-2 mt-4'>
+        <div className='flex space-x-2 mt-4 absolute  bottom-4'>
           {images.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full ${
+              className={`w-2 h-2 rounded-full translate-y-4 ${
                 currentIndex === index ? 'bg-blue-500' : 'bg-gray-500'
               }`}
             />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
