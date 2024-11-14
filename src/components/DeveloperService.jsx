@@ -8,7 +8,7 @@ export const DeveloperService = () => {
   return (
     <section className='w-full flex bg-customDarkBg1' id='service'>
       <div className='mt-40 text-center ml-4 sm:ml-16 md:ml-24 lg:ml-40'>
-        <h1 className='text-customSecondary text-3xl mt-20 mx-auto'>
+        <h1 className='text-customSecondary text-xl lg:text-3xl font-bold mt-20 mx-auto'>
           Impulsa el Desarrollo de tu Sitio o Aplicación
         </h1>
         <h1 className='text-5xl text-white font-bold mt-16'>
@@ -121,3 +121,4 @@ export const DeveloperService = () => {
     </section>
   )
 }
+
