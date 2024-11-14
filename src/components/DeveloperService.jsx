@@ -7,8 +7,8 @@ export const DeveloperService = () => {
 
   return (
     <section className='w-full flex bg-customDarkBg1' id='service'>
-      <div className='mt-40 text-center ml-4 sm:ml-16 md:ml-24 lg:ml-40'>
-        <h1 className='text-customSecondary text-xl lg:text-3xl font-bold mt-20 mx-auto'>
+      <div className='mt-20 text-center ml-4 sm:ml-16 md:ml-24 lg:ml-40'>
+        <h1 className='text-customSecondary text-xl lg:text-3xl font-bold  mx-auto'>
           Impulsa el Desarrollo de tu Sitio o Aplicación
         </h1>
         <h1 className='text-5xl text-white font-bold mt-16'>
@@ -21,7 +21,7 @@ export const DeveloperService = () => {
         </h1>
 
         <div className='flex flex-wrap justify-center mt-20 gap-6 sm:gap-8 md:gap-12'>
-          <div className='w-full sm:w-80 md:w-[319px] h-[450px] bg-customDarkBg2 rounded px-6 py-6'>
+          <div className=' w-80 bg-customDarkBg2 rounded  py-6'>
             <img
               src='/assets/icons/ecommerce.svg'
               alt='ecommerce'
@@ -42,7 +42,7 @@ export const DeveloperService = () => {
               clientes de manera eficiente.
             </p>
           </div>
-          <div className='w-full sm:w-80 md:w-[319px] h-[450px] bg-customDarkBg2 rounded px-6 py-6'>
+          <div className='w-80 bg-customDarkBg2 rounded px-6 py-6'>
             <img
               src='/assets/icons/landingpage.svg'
               alt='landing page'
@@ -62,7 +62,7 @@ export const DeveloperService = () => {
               campañas de marketing digital.
             </p>
           </div>
-          <div className='w-full sm:w-80 md:w-[319px] h-[450px] bg-customDarkBg2 rounded px-6 py-6'>
+          <div className='w-80 bg-customDarkBg2 rounded px-6 py-6'>
             <img
               src='/assets/icons/graficos.svg'
               alt='graficos'
@@ -82,7 +82,7 @@ export const DeveloperService = () => {
               los canales de comunicación.
             </p>
           </div>
-          <div className='w-full sm:w-80 md:w-[319px] h-[450px] bg-customDarkBg2 rounded px-6 py-6'>
+          <div className='w-80 bg-customDarkBg2 rounded px-6 py-6'>
             <img
               src='/assets/icons/metricas.svg'
               alt='metricas'
