@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { MdNavigateNext } from 'react-icons/md'
+import { GrFormPrevious } from 'react-icons/gr'
 
 export const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -57,13 +59,13 @@ export const Services = () => {
           onClick={prevSlide}
           className='absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black rounded-full p-2 shadow-lg'
         >
-          ◀
+          <GrFormPrevious />
         </button>
         <button
           onClick={nextSlide}
           className='absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black rounded-full p-2 shadow-lg'
         >
-          ▶
+          <MdNavigateNext />
         </button>
         <div className='flex space-x-2 mt-4 absolute  bottom-4'>
           {images.map((_, index) => (

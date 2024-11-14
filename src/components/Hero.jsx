@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { ContactModal } from './ContactModal'
 import { Companies } from './Companies'
+import { MdNavigateNext } from 'react-icons/md'
+import { GrFormPrevious } from 'react-icons/gr'
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -63,13 +65,13 @@ export const Hero = () => {
             onClick={prevSlide}
             className='absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black rounded-full p-2'
           >
-            ◀
+            <GrFormPrevious />
           </button>
           <button
             onClick={nextSlide}
             className='absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black rounded-full p-2'
           >
-            ▶
+            <MdNavigateNext />
           </button>
         </div>
         <div className='flex justify-center mt-4 space-x-2'>
