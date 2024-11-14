@@ -21,14 +21,14 @@ export const Services = () => {
   return (
     <div className='bg-customDarkBg1 w-full flex flex-col md:flex-row mx-4 md:mx-10 lg:mx-60 mt-10'>
       <div className='flex-1 text-center md:text-left'>
-        <h1 className='text-customSecondary font-inconsolata text-2xl my-4 md:my-6'>
+        <h1 className='text-customSecondary font-bold text-2xl  my-4 md:my-6'>
           Impulsa el Desarrollo de tu <br /> Sitio o Aplicación
         </h1>
         <h1 className='text-3xl sm:text-4xl text-white font-bold my-4 md:my-6'>
           Servicios Integrales para <br /> un Desarrollo Exitoso de <br />{' '}
           Principio a Fin.
         </h1>
-        <h3 className='text-white text-lg sm:text-xl my-4 md:my-6'>
+        <h3 className='text-gray-400 font-bold text-lg sm:text-xl my-4 md:my-6'>
           Nos Importa Ofrecer Diseño, <br /> Implementación, Lanzamiento y{' '}
           <br /> Mantenimiento continuo para tu proyecto
         </h3>
