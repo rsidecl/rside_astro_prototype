@@ -33,24 +33,24 @@ export const Services = () => {
           <br /> Mantenimiento continuo para tu proyecto
         </h3>
         <a href='service'>
-          <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-full sm:w-52 h-14  mt-8 md:mt-10'>
+          <button className='bg-customPrimary hover:bg-customDarkBg text-white font-bold py-2 px-4 rounded w-36 sm:w-52 h-14  mt-8 md:mt-10'>
             Nuestros <br /> Servicios
           </button>
         </a>
       </div>
 
-      <div className='flex-1 flex justify-center items-center relative mt-8 lg:mr-72 md:mt-0'>
+      <div className='flex-1 flex justify-center items-center relative   mt-8 lg:mr-72 md:mt-0'>
         <img
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
           className='w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-lg'
         />
-        <div className='flex space-x-2 mt-4 md:absolute md:bottom-4'>
+        <div className='flex space-x-2 mt-4  md:absolute md:bottom-4'>
           {images.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full ${
+              className={`w-2 h-2 rounded-full sm:mt-64 sm:-translate-x-40 lg:translate-x-0 ${
                 currentIndex === index ? 'bg-blue-500' : 'bg-gray-500'
               }`}
             />
