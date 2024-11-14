@@ -50,7 +50,7 @@ export const Services = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full sm:mt-64 sm:-translate-x-40 lg:translate-x-0 ${
+              className={`w-2 h-2 rounded-full mt-64 -translate-x-40 lg:translate-x-0 ${
                 currentIndex === index ? 'bg-blue-500' : 'bg-gray-500'
               }`}
             />
