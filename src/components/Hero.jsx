@@ -6,7 +6,7 @@ export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const images = ['/assets/images/cinies.jpg', '/assets/images/ganzo.jpg']
+  const images = ['/assets/images/cinies.jpg', '']
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % images.length)
